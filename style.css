@@ -1,0 +1,49 @@
+*, ::after, ::before {
+    padding: 0;
+    margin: 0;
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    height: 100vh;
+    background: linear-gradient(to right, #af1452, #fa1455);
+}
+
+.container {
+    padding: 25px;
+}
+
+.content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 15px;
+}
+
+.content img {
+    border-radius: 12px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#btn {
+    width: fit-content;
+    display: block;
+    margin: 15px auto;
+    padding: 6px;
+    border-radius: 6px;
+    background-color: #000;
+    color: #fff;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+
+#btn:hover {
+    opacity: .5;
+}
